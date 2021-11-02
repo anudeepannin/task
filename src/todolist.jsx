@@ -10,7 +10,7 @@ const TodoList=({todolist,delete1})=>{
 
                <div key={index}>
 
-                   <h5>{outputs}&nbsp;&nbsp;<button onClick={()=>delete1(index)}>deletebtn</button></h5>
+                   <h5>{outputs}&nbsp;&nbsp;<button onClick={()=>delete1(index)}>Delete</button></h5>
 
                </div>)}
 
