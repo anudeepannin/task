@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './App.css';
 
 import TodoList from './todolist';
+import Fun from './fun';
+import Class1 from './class1';
+import { Component } from 'react';
 
 function App() {
 
@@ -33,10 +36,13 @@ function App() {
   return (
 
     <div className="App">
+
+
+  
      <center>
 
 
-    <h5>My TaskList</h5>
+    <h2>My TaskList</h2>
 
     <form onSubmit={event}>
 
@@ -45,9 +51,19 @@ function App() {
     <input type="submit" name="submit" value="submit"></input>
     </form>
       <TodoList todolist={output} delete1={delete1} ></TodoList>
-    </center>
+    </center>  
+
+    <div>
+      <h3>exporting the functions</h3>
+    
+      <Fun />
+     
+      </div>
+      <div>
+       <Class1  ></Class1>
+      </div>
   </div>
-);
+); 
 }
 
 export default App; 
